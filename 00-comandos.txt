@@ -26,6 +26,12 @@ Dentro da pasta que criada e que se deseja iniciar ,  com o comando :
 
 git init  - cria arquivo .git
 
+Atualizar o nome da branch principal de master para main
+
+git branch -M main
+
+
+
 se inicia a pasta
 
 tecla Q sai
@@ -60,6 +66,8 @@ git reset ( remove tudo da staged area )
 COMMIT
 
 git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
+ git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staged area )
+
 
 
 
