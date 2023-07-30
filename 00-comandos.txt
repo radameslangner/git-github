@@ -25,6 +25,7 @@ cria a pasta que deseja cirar pelo sistema ou pelo prompt ou terminal
 Dentro da pasta que criada e que se deseja iniciar ,  com o comando :
 
 git init  - cria arquivo .git
+se inicia a pasta
 
 Atualizar o nome da branch principal de master para main
 
@@ -32,19 +33,15 @@ git branch -M main
 
 
 
-se inicia a pasta
 
 tecla Q sai
 
-
-Preparar read area
 
 
 create README.txt ou .md
 
 git status
 
-git log
 
 git branch
 
@@ -69,10 +66,21 @@ git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
  git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staged area )
 
 
-
-
 git status -s ( -s formato curto )
 git status --long ( saída padrão )
+
+
+Histórico
+
+git log ( exibe histórico de commits )
+git log -2 ( exibe histórico dos últimos 2 commits )
+git log --oneline  ( exibe histórico dos commits resumidamente )
+git log -2  --oneline  ( exibe histórico dos útimos 2 commits resumidamente )
+
+q - sai
+
+git reflog ( histórico armazenado na máquina )
+
 
 
 
