@@ -1,89 +1,107 @@
 --------- COMANDOS  ---------
 
-instalação sudo dnf install git
+    Instalação
+sudo dnf install git
 
-git --version
+╰─ git --version
 
-configura name email
+    Configura name email
 
-git config --global user.name "Radames Langner"
-git config --global user.email radahmes@gmail.com
-
-
-    define editor
-    git config --global core.editor 'code --wait'
-
-    git config --global -e ( abre arquivo de configuração do git)
+╰─ git config --global user.name "Radames Langner"
+╰─ git config --global user.email radahmes@gmail.com
 
 
+    Define editor
+╰─ git config --global core.editor 'code --wait'
 
-git config --list ( lista configurações do git)
+╰─ git config --global -e ( abre arquivo de configuração do git)
 
-create repositorio
+
+
+╰─ git config --list ( lista configurações do git)
+
+!!! create repositorio
 
 cria a pasta que deseja cirar pelo sistema ou pelo prompt ou terminal
 Dentro da pasta que criada e que se deseja iniciar ,  com o comando :
 
-git init  - cria arquivo .git
-se inicia a pasta
-
-Atualizar o nome da branch principal de master para main
-
-git branch -M main
+    Inicia - cria arquivo .git - se inicia a pasta
+╰─ git init
 
 
+!!! Cuidado Atualizar o nome da branch principal de master para main
+
+╰─ git branch -M main
 
 
-tecla Q sai
+
+
+tecla ' q ' sai
 
 
 
 create README.txt ou .md
 
-git status
+╰─ git status
+
+╰─ git add nomedoarquivo ( adiciona arquivo a staged area )
+
+╰─ git add -A (adiciona todos na staged area)
+
+╰─ git add . ( adiciona a staged area só o que esta na pasta atual)
+
+╰─ git add * ( add da pasta atua, não adicona os arquivos deletados  )
+
+
+╰─ git reset nomedoarquivo ( remove da staged area )
+╰─ git reset ( remove tudo da staged area )
+
+
+COMMIT
+
+╰─ git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
+╰─ git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staged area )
+
+
+╰─ git status -s ( -s formato curto )
+╰─ git status --long ( saída padrão )
+
+
+Histórico
+
+╰─ git log ( exibe histórico de commits )
+╰─ git log -2 ( exibe histórico dos últimos 2 commits )
+╰─ git log --oneline  ( exibe histórico dos commits resumidamente )
+╰─ git log -2  --oneline  ( exibe histórico dos útimos 2 commits resumidamente )
+
+q - sai
+
+╰─ git reflog ( histórico armazenado na máquina )
+
+    cria comit com nome de commit existente
+
+╰─ git commit -a -C 0358f72 ( -C para informar commit existente )
+
+
+╰─ git revert 730050b7 ( reverte commit pelo id do commit )
+
+╰─ git revert HEAD  ( HEAD reverte o último commit )
+
+╰─ git revert HEAD~2 ( HEAD~2 revertte segundo commit antes do HEAD )
+
+╰─ git revert --hard HEAD~1 ( --hard apaga alterações junto com o commit )
+
+
+
+
+
+
+
 
 
 git branch
 
 trackerar arquivos
-
-git add nomedoarquivo ( adiciona arquivo a staged area )
-
-git add -A (adiciona todos na staged area)
-
-git add . ( adiciona a staged area só o que esta na pasta atual)
-
-git add * ( add da pasta atua, não adicona os arquivos deletados  )
-
-
-git reset nomedoarquivo ( remove da staged area )
-git reset ( remove tudo da staged area )
-
-
-COMMIT
-
-git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
- git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staged area )
-
-
-git status -s ( -s formato curto )
-git status --long ( saída padrão )
-
-
-Histórico
-
-git log ( exibe histórico de commits )
-git log -2 ( exibe histórico dos últimos 2 commits )
-git log --oneline  ( exibe histórico dos commits resumidamente )
-git log -2  --oneline  ( exibe histórico dos útimos 2 commits resumidamente )
-
-q - sai
-
-git reflog ( histórico armazenado na máquina )
-
-
-
-
 
 
 

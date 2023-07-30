@@ -1,4 +1,2 @@
 # Título
 ## Subtitulo
-
-reusando mensagem 
