@@ -1,0 +1,149 @@
+--------- COMANDOS  ---------
+
+instalação sudo dnf install git
+
+git --version
+
+configura name email
+
+git config --global user.name "Radames Langner"
+git config --global user.email radahmes@gmail.com
+
+
+    define editor
+    git config --global core.editor 'code --wait'
+
+    git config --global -e ( abre arquivo de configuração do git)
+
+
+
+git config --list ( lista configurações do git)
+
+create repositorio
+
+cria a pasta que deseja cirar pelo sistema ou pelo prompt ou terminal
+Dentro da pasta que criada e que se deseja iniciar ,  com o comando :
+
+git init  - cria arquivo .git
+
+se inicia a pasta
+
+tecla Q sai
+
+
+Preparar read area
+
+
+create README.txt ou .md
+
+git status
+
+git log
+
+git branch
+
+trackerar arquivos
+
+git add nomedoarquivo ( adiciona arquivo a staged area )
+
+git add -A (adiciona todos na staged area)
+
+git add . ( adiciona a staged area só o que esta na pasta atual)
+
+git add * ( add da pasta atua, não adicona os arquivos deletados  )
+
+
+git reset nomedoarquivo ( remove da staged area )
+git reset ( remove tudo da staged area )
+
+
+COMMIT
+
+git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
+
+
+
+git status -s ( -s formato curto )
+git status --long ( saída padrão )
+
+
+
+
+
+
+git diff (mostra as alteraões por arquivo e linha de todos os arquivos modificados)
+
+git diff --name-only (lista arquivos modificados só o nome)
+
+git checkout HEAD --nomedoarquivo (remoove alterações feitas no arquivo )
+
+
+git remote
+
+gera chave publica privada
+
+ssh-keygen -t rsa -b 4096 -C "radahmes@gmail.com"
+
+comando de origem do repositorio
+git remote add syslogin https://github.com/radexRS/syslogin.git
+
+
+
+PS D:\GIT> cd .\syslogin\
+PS D:\GIT\syslogin> git init
+Initialized empty Git repository in D:/GIT/syslogin/.git/
+PS D:\GIT\syslogin> git remote add origen https://github.com/radexRS/syslogin.git
+PS D:\GIT\syslogin>
+PS D:\GIT\syslogin> git remote -v
+origen  https://github.com/radexRS/syslogin.git (fetch)
+origen  https://github.com/radexRS/syslogin.git (push)
+PS D:\GIT\syslogin>
+
+git remote
+
+
+git push -u syslogin master
+
+
+
+PS D:\GIT\syslogin> git remote add syslogin https://github.com/radexRS/syslogin.git
+PS D:\GIT\syslogin> git remote
+origen
+syslogin
+PS D:\GIT\syslogin> git push -u syslogin master
+
+
+https://github.com/radexRS/syslogin/pull/new/master
+
+depois de fazer commit no repositorio local
+
+git push syslogin  master (manda para o github)
+
+
+hidden no git
+
+criar arquivo na raiz do projeto nomeado como:
+
+.gitignore
+
+ listar o nome dos arquimos e ou diretorios  que não devem aparecer que vão ficar opcultos só no git
+
+
+git reverse (revert o commit e não perde o que foi feito )
+
+git revert --no-edit id do commit
+
+
+
+ git pull syslogin master (pega alterações do remoto e atualiza no local )
+
+
+
+git clone url que deseja clonar o projeto
+
+
+fork
+
+contribuir
+
+etc etal
