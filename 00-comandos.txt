@@ -29,38 +29,28 @@ Dentro da pasta que criada e que se deseja iniciar ,  com o comando :
 ╰─ git init
 
 
-!!! Cuidado Atualizar o nome da branch principal de master para main
-
-╰─ git branch -M main
-
-
-
-
 tecla ' q ' sai
 
 
-
-create README.txt ou .md
-
 ╰─ git status
 
-╰─ git add nomedoarquivo ( adiciona arquivo a staged area )
+╰─ git add nomedoarquivo ( adiciona arquivo a staging area )
 
-╰─ git add -A (adiciona todos na staged area)
+╰─ git add -A (adiciona todos na staging area)
 
-╰─ git add . ( adiciona a staged area só o que esta na pasta atual)
+╰─ git add . ( adiciona a staging area só o que esta na pasta atual)
 
 ╰─ git add * ( add da pasta atua, não adicona os arquivos deletados  )
 
 
-╰─ git reset nomedoarquivo ( remove da staged area )
-╰─ git reset ( remove tudo da staged area )
+╰─ git reset nomedoarquivo ( remove da staging area )
+╰─ git reset ( remove tudo da staging area )
 
 
 COMMIT
 
 ╰─ git commit -m "Primeiro Commit" ( -m informar texto identificador do commit)
-╰─ git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staged area )
+╰─ git commit -a -m "texto" ( -a para comitar tudo que está sendo minitorado mas sem add na staging area )
 
 
 ╰─ git status -s ( -s formato curto )
@@ -93,13 +83,50 @@ q - sai
 
 
 
+╰─❯ git commit --amend -m "mensagem"
+
+╰─❯ git commit --amend --no-edit ( altera o ultimo commit  )
+
+╰─❯ git restore . ( desfaz todas alterações que não foram monitoradas commitadas )
 
 
+Clonar ( com controle de versionamento )
+
+abrir pasta pelo termina escolher modo ( https - ssh - GitHub CLI)
 
 
+SSH ( mais facil e segue abaixo )
+git clone git@github.com:radexRS/sinplus.git
+
+
+Arquivo .zip não faz controle de versionamento
+
+Criar repositório no github
+
+Sincronisar diretorio criado no github com o diretorio logal
+
+╰─❯ git remote add origem git@github.com:radexRS/git.gitgit
 
 
 git branch
+
+!!! Cuidado Atualizar o nome da branch principal de master para main
+
+╰─ git branch -M main
+
+
+Empura arquivos do diretório local para o remoto
+
+PUSH
+
+╰─❯ git push -u origin main
+
+
+
+
+
+
+
 
 trackerar arquivos
 
