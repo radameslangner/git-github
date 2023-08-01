@@ -103,10 +103,9 @@ Arquivo .zip não faz controle de versionamento
 
 Criar repositório no github
 
-Sincronisar diretorio criado no github com o diretorio logal
+Link diretorio "origin" criado no github com o diretorio logal
 
-╰─❯ git remote add origem git@github.com:radexRS/git.gitgit
-
+╰─❯ git remote add origin https://github.com/radexRS/git-github.git
 
 git branch
 
@@ -117,12 +116,45 @@ git branch
 
 Empura arquivos do diretório local para o remoto
 
-PUSH
+    PUSH    ( sincroniza no local para remoto )
 
 ╰─❯ git push -u origin main
 
 
+git remote -v ( mostra diretórios remotos )
 
+token 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
+
+
+
+    Puxando arquivos ( recebe arquivos do diretorio origin do github)
+
+╰─❯ git pull
+
+
+
+    Autenticação SSH
+
+        Verificar chaves ssh
+
+╰─❯  ls -al ~/.ssh
+
+        Criar chave ssh
+
+╰─❯  ssh-keygen -t ed25519 -C "radahmes@gmail.com"
+
+
+        Adicionar a chave ao agente ssh
+
+╰─❯  eval "$(ssh-agent -s)"
+❯ Agent pid 24611
+
+╰─❯   ssh-add ~/.ssh/id_ed25519
+
+
+        Testa conexão ssh com github
+
+╰─❯ ssh -T git@github.com
 
 
 
